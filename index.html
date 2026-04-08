@@ -1,36 +1,95 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>CSS Types Demo</title>
+    <title>CSS Types with Images</title>
 
-    
+    <!-- Internal CSS -->
     <style>
         body {
             background-color: lightgray;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        .container {
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .box {
+            width: 200px;
+            text-align: center;
+            padding: 10px;
+            border: 2px solid black;
+            background-color: white;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
         }
 
         .internal-box {
-            background-color: white;
-            padding: 10px;
-            border: 2px solid black;
+            border: 2px solid green;
         }
     </style>
 
-  
+    <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-
+    <!-- Inline CSS -->
     <h1 style="color: red;">Inline CSS Example</h1>
 
     <div class="internal-box">
-        Internal CSS Example (inside &lt;style&gt;)
+        Internal CSS Example
     </div>
 
     <div class="external-box">
-        External CSS Example (from style.css)
+        External CSS Example
+    </div>
+
+    <!-- Image Containers -->
+    <div class="container">
+
+        <div class="box">
+            <img src="images/img1.jpg" alt="Image 1">
+            <p>Image 1</p>
+        </div>
+
+        <div class="box">
+            <img src="images/img2.jpg" alt="Image 2">
+            <p>Image 2</p>
+        </div>
+
+        <div class="box">
+            <img src="images/img3.jpg" alt="Image 3">
+            <p>Image 3</p>
+        </div>
+
+        <div class="box">
+            <img src="images/img4.jpg" alt="Image 4">
+            <p>Image 4</p>
+        </div>
+
+        <div class="box">
+            <img src="images/img5.jpg" alt="Image 5">
+            <p>Image 5</p>
+        </div>
+
     </div>
 
 </body>
